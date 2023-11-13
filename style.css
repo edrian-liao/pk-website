@@ -914,3 +914,96 @@ box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
   color: black;
   padding: 5px 5px 5px 5px;
 }
+@media only screen and (max-width: 768px) {
+  .navBar {
+    flex-direction: column;
+    align-items: flex-start;
+    height: 10%;
+  }
+  .navBar li {
+    font-size: 12px;
+    margin-right: 0%;
+  }
+  .headerLinks {
+    flex-direction: row; /* Stack links vertically */
+    align-items: flex-start; /* Align links to the start of the navBar */
+    padding-right: 0; /* Remove right padding */
+    gap: 3%;
+  }
+  .navBar li button {
+    height: 30px;
+    width: 60px;
+    font-size: 12px;
+  }
+
+  #hero-1 img, #hero-2 img, #hero-3 img {
+    width: 100%;
+    order: 2; 
+    margin-left: 0;
+    margin-top: 20px; 
+  }
+
+  .hero1Text, .hero2Text, .hero3Text {
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+    order: 1; 
+    text-align: center; 
+  }
+
+  .heroContent h1 {
+    font-size: 32px; 
+  }
+
+  #hero-1, #hero-2, #hero-3 {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #hero-1 p, #hero-2 p, #hero-3 p {
+    width: 100%;
+    font-size: 20px;
+  }
+
+
+  .footerLinks ul {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+
+  .logoInfoFooter p {
+    flex-direction: flex-start;
+    padding-left: 0px;
+    padding-right: 0px;
+    font-size: 15px;
+  }
+
+  .footerContainer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  .footerLogo {
+    height: 70px;
+    align-self: center;
+  }
+
+  .logoInfoFooter, .footerLinks, .socials {
+    width: 100%; /* Make sure these take full width to reduce left and right gaps */
+    padding: 0 10px; /* Adjust the padding to reduce the size of left/right gaps */
+    text-align: center; /* Center-align the text */
+  }
+  .socials ul {
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .logoInfoFooter p, .footerLinks a, .socials p {
+    padding-left: 10px; /* Adjust the left padding */
+    padding-right: 10px; /* Adjust the right padding */
+  }
+
+}
