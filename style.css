@@ -1,0 +1,916 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans&family=PT+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap');
+
+@font-face {
+  font-family: "Metropolis";
+  src: url("fonts/Metropolis/Regular/Metropolis-Regular.eot");
+  src: url("fonts/Metropolis/Regular/Metropolis-Regular.eot")
+      format("embedded-opentype"),
+    url("fonts/Metropolis/Regular/Metropolis-Regular.woff2") format("woff2"),
+    url("fonts/Metropolis/Regular/Metropolis-Regular.woff") format("woff"),
+    url("fonts/Metropolis/Regular/Metropolis-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html { 
+  scroll-behavior: smooth; 
+}
+
+body {
+  background-color: #e5e5e5;
+}
+
+.top {
+  background-color: #FFEFC3;
+}
+
+header {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navBar {
+  display: flex;
+  font-family: "PT Sans", "Metropolis",  sans-serif;
+  font-weight: bold;
+  width: 100%;
+  align-items: center;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  background-color: white;
+  box-shadow: 0 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.headerLinks {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  gap: 7%;
+  padding-right: 7%;
+  width: 100%;
+  height: 100px;
+}
+
+.navBar img {
+  margin-left: 3%;
+  width: 18%;
+  height: auto;
+  margin-top: -1%;
+  object-fit: contain;
+}
+
+.navBar li a {
+  color: #398E82;
+  text-decoration: none;
+}
+
+.navBar li {
+  list-style-type: none;
+  flex: 0 1 auto;
+}
+
+.navBar li a:hover {
+  color: #6452a2;
+}
+
+.navBar li button {
+  height: 50px;
+  width: 100px;
+  font-family: "PT Sans", "Metropolis", sans-serif;
+  font-weight: bold;
+  background-color: #398e82;
+  color: #ffffff;
+  border: none;
+  border-radius: 20px;
+  font-size: 15px;
+}
+
+.navBar li button:hover {
+  color: #6452a2;
+}
+
+.hero {
+  overflow: hidden;
+  text-align: center;
+}
+
+.heronav {
+  display: inline-flex;
+  width: 10px;
+  height: 10px;
+  background: white;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin: 0 0 10px 0;
+  position: relative;
+}
+
+.heronav:hover {
+  background: #6352a2;
+}
+
+.heronav:active {
+  top: 1px;
+}
+
+.heroslides {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  padding-bottom: 30px;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.heroslides::-webkit-scrollbar {
+  display: none;
+}
+
+.heroslides div {
+  scroll-snap-align: start;
+  flex-shrink: 0;
+  width: 100%;
+  height: auto;
+  transform-origin: center center;
+  transform: scale(1);
+  transition: transform 0.5s;
+  position: relative;
+  overflow-x: hidden;
+}
+
+#hero-1, #hero-2, #hero-3 {
+  scroll-margin-top: 100px;
+}
+
+#hero-1 {
+  margin-top: 80px;
+  display: flex;
+  flex: 1 0 auto;
+  /* flex-wrap: wrap; */
+  gap: 3%;
+}
+
+#hero-2, #hero-3 {
+  display: flex;
+  gap: 3%;
+  flex: 1 0 auto;
+}
+
+.hero1Text {
+  padding-left: 5%;
+  padding-right: 2%;
+  flex-basis: 40%;
+
+}
+
+.hero2Text {
+  flex-basis: 50%;
+  padding-left: 5%;
+}
+
+.hero3Text { 
+  flex-basis: 60%;
+  margin-left: 5%;
+}
+
+.heroContent h1 {
+  font-size: 60px;
+  font-family: "Fira Sans", "PT Sans", sans-serif;
+  font-weight: bold;
+  color: #6352a2;
+  text-align: left;
+  align-content: left;
+  width: 40%;
+}
+
+#hero-2 h1 {
+  margin-top: 60px;
+  width: 100%;
+}
+
+#hero-3 h1 {
+  margin-top: 60px;
+  width: 100%;
+}
+
+.heroContent p {
+  padding-top: 10px;
+  font-size: 22px;
+  line-height: 1.5;
+  font-family: "PT Sans", "Metropolis", sans-serif;
+  text-align: left;
+}
+
+#hero-2 p, #hero-3 p{
+  width: 80%;
+  font-size: 30px;
+}
+
+
+#hero-1 img {
+  width: 45%;
+  height: auto;
+  flex: 0 1 auto;
+  float: right;
+  margin-left: 7.5%;
+  object-fit: contain;
+}
+
+#hero-2 img {
+  width: 30%;
+  height: auto;
+  flex: 0 1 auto;
+  float: left;
+  margin-left: 10%;
+  padding-top: 70px;
+  margin-right: 7%;
+  object-fit: contain;
+}
+
+#hero-3 img {
+  width: 35%;
+  height: auto;
+  display: flex;
+  flex: 0 1 auto;
+  padding-top: 20px;
+  object-fit: contain;
+  margin-left: 5%;
+}
+
+#hero-1 button {
+  position: absolute;
+  height: 50px;
+  width: 140px;
+  margin-top: 20px;
+  font-family: "PT Sans", "Metropolis", sans-serif;
+  font-weight: bold;
+  background-color: #0A6154;
+  color: #ffffff;
+  border: none;
+  border-radius: 20px;
+  font-size: 20px;
+  text-align: center;
+  align-self: left;
+  left: 30%;
+}
+
+#hero-2 button {
+  position: absolute;
+  height: 50px;
+  width: 150px;
+  margin-top: 20px;
+  font-family: "PT Sans", "Metropolis", sans-serif;
+  font-weight: bold;
+  background-color: #0A6154;
+  color: #ffffff;
+  border: none;
+  border-radius: 20px;
+  font-size: 15px;
+  text-align: center;
+  left: 0;
+}
+
+.aboutus {
+  background-color: #e7f6f3;
+  padding-bottom: 100px;
+  padding-top: 100px;
+  display: flex;
+  /* flex-wrap: wrap; */
+  justify-content: center;
+  height: auto;
+  scroll-margin-top: 80px;
+}
+
+.aboutusText {
+  margin-left: 55%;
+  margin-right: 5%;
+}
+
+.aboutusContent h1 {
+  font-family: 'Fira Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 60px;
+  line-height: 72px;
+  color: #6452A2;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.aboutusContent p {
+  padding-top: 20px;
+  font-family: "PT Sans", "Metropolis", sans-serif;
+  text-align: left;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.aboutusContent img {
+  border: 8px solid #398e82;
+  border-radius: 40px;
+  padding-bottom: 20px;
+  display: flex;
+  gap: 3%;
+  width: 45%;
+  margin-left: 5%;
+  flex: 0 1 auto;
+  float: left;
+}
+
+.aboutuscards {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5%;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 2px 2px 1px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  min-height: 300px;
+  padding-bottom: 20px;
+}
+
+.polygon img {
+  position: relative;
+  width: 130px;
+  top: -30px;
+  right: 97%;
+  display: flex;
+  flex: 0 1 auto;
+  max-width: 200%;
+  height: auto;
+}
+
+.dot {
+  cursor: pointer;
+  height: 10px;
+  width: 10px;
+  margin: 0 2px;
+  background-color: white;
+  border-radius: 100%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.getInvolved {
+  background-color: #e7f6f3;
+  padding-top: 100px;
+  padding-bottom: 80px;
+  scroll-margin-top: 80px;
+}
+
+.getInvolved h2 {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: normal;
+  text-align: center;
+  font-size: 40px;
+  color: #6352a2;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.getInvolved p {
+  padding-top: 20px;
+  font-family: "Metropolis", "PT Sans", sans-serif;
+  text-align: center;
+  font-size: 18px;
+  padding-left: 15%;
+  padding-right: 15%;
+  line-height: 1.5;
+}
+
+.getInvolvedCards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 5% 0 5%;
+  gap: 5%;
+}
+
+.cards {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5%;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 2px 2px 1px rgba(0, 0, 0, 0.2);
+  width: 50%;
+  min-height: 420px;
+}
+
+.cards .getInvolvedCardHeader {
+  display: flex;
+  align-items: center;
+  gap: 0%;
+}
+
+.getInvolvedBody {
+  display: flex;
+}
+
+.getInvolvedCardHeader img {
+  width: 20%;
+  height: auto;
+  flex: 0 1 auto;
+  float: right;
+  display: flex;
+  /* margin-right: 5%; */
+}
+
+.cards h3 {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: normal;
+  text-align: left;
+  font-size: 30px;
+  color: #0a6154;
+  padding-left: 7%;
+  padding-right: 5%;
+}
+
+.getInvolvedBody img {
+  width: 5%;
+  height: 200px;
+  padding-top: 7%;
+}
+
+#signUpCard .getInvolvedBody img {
+  margin-top: -2%;
+}
+
+.cards p {
+  padding-top: 20px;
+  font-family: "PT Sans", "Metropolis", sans-serif;
+  text-align: left;
+  font-size: 15px;
+  padding-left: 5%;
+  padding-right: 5%;
+  line-height: 1.5;
+  padding-bottom: 100px;
+}
+
+.cards button {
+  height: 50px;
+  width: 100px;
+  background-color: #0a6154;
+  color: #ffffff;
+  border: none;
+  border-radius: 20px;
+  margin-top: 20px;
+  font-size: 15px;
+  font-family:  "PT Sans", "Metropolis", sans-serif;
+  font-weight: bold;
+  position: absolute;
+  bottom: 10%;
+}
+
+.signupform {
+  background-color: white;
+  padding-bottom: 10%;
+  height: auto;
+  width: 100%;
+  overflow: hidden;
+}
+
+#su-1 {
+  position: relative;
+  width: 10%;
+  height: 10%;
+  top: 160px;
+}
+
+#su-2 {
+  width: 12%;
+  height: 12%;
+  position: relative;
+  top: 500px;
+  margin-right: 5%;
+  margin-left: -2%;
+}
+
+#su-3 {
+  width: 10%;
+  height: 10%;
+  position: relative;
+  left: 57%;
+  top: 20px;
+}
+
+#su-4 {
+  position: relative;
+  width: 15%;
+  height: 15%;
+  top: 400px;
+  margin-right: -5%;
+  float: right;
+}
+
+.signupContent {
+  border: 4px solid #0A6154;
+  margin: 0 auto;
+  margin-top: -40px;
+  width: 50%;
+}
+
+.signupContent h1 {
+  padding-left: 40px;
+  border: 4px solid #0A6154;
+  background-color: #0A6154;
+  font-family: "Fire Sans", "PT Sans", sans-serif;
+  font-weight: normal;
+  color: white;
+  font-size: 30px;
+}
+
+.signupText{
+  padding: 20px 40px 20px 40px;
+  font-family: "Fire Sans", "PT Sans", sans-serif;
+  font-weight: normal;
+  color: gray;
+}
+
+.signupText ul{
+  line-height: 3;
+  list-style-type: none;
+}
+
+.signupAs{
+  line-height: 1.5;
+  padding-top: 20px;
+}
+
+.signupAdditional{
+  display: flex;
+  justify-content: space-between;
+  line-height: 1.5;
+  padding-top: 20px;
+}
+
+.signupAdditional textarea{
+  box-shadow: 0 3px 2px 1px rgba(0, 0, 0, 0.2);
+  border-color: rgba(0, 0, 0, 0.2);
+  border-width: thin;
+  width: 60%;
+  height: 100px;
+  margin: 5px 0px 0px 0;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+
+.signupText ul input {
+  padding: 10px;
+  width: 60%;
+  margin: 12px 0px 0px 0;
+  border-width: thin;
+  border-color: rgba(0, 0, 0, 0.2);
+  background: white;
+  box-shadow: 0 3px 2px 1px rgba(0, 0, 0, 0.2);
+  height: 20px;
+  float: right;
+  border-radius: 5px;
+}
+
+.signupContent button {
+  display: block;
+  margin: 40px auto;
+  height: 35px;
+  width: 100px;
+  background-color: #0a6154;
+  font-family: "PT Sans", "Fire Sans", sans-serif;
+  font-weight: bold;
+  color: #ffffff;
+  border: none;
+  border-radius: 12px;
+  font-size: 15px;
+}
+
+.footerContainer {
+  padding-top: 20px;
+  display: flex;
+  background-color: #000000;
+  justify-content: space-between;
+  align-items: left;
+  gap: 100px;
+}
+
+.logoInfoFooter {
+  width: 30%;
+}
+.footerLogo {
+  height: 100px;
+  margin-top: 20px;
+}
+
+.logoInfoFooter p {
+  font-family: "PT Sans", "Metropolis", sans-serif;
+  font-size: 15px;
+  padding-left: 40px;
+  padding-right: -10%;
+  line-height: 1.5;
+  color: #ffffff;
+}
+
+.footerLinks a {
+  color: #ffffff;
+  font-family: "PT Sans", "Metropolis", sans-serif;
+}
+
+.footerLinks ul {
+  padding-top: 40px;
+  padding-bottom: 50px;
+}
+
+.footerLinks li {
+  margin-bottom: 15px;
+}
+
+
+.socials p {
+  font-family: "Metropolis", "PT Sans", sans-serif;
+  font-size: 15px;
+  padding-left: 5%;
+  padding-top: 40px;
+  padding-right: 5%;
+  line-height: 1.5;
+  color: #ffffff;
+}
+
+.socials ul {
+  display: flex;
+  gap: 20px;
+  padding-top: 10px;
+  padding-right: 40px;
+}
+
+.socials img {
+  height: 30px;
+  width: auto;
+}
+
+.ourobjectives {
+  background-color: #e7f6f3;
+}
+
+.ourobjectives h2 {
+  margin-top: 14px;
+  margin-bottom: 67px;
+  text-align: center;
+  font-family: 'Fira Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 72px;
+  color: #6452A2;
+}
+
+.ourprogram {
+    background-color: #e7f6f3;
+    padding-bottom: 80px;
+    padding-left: 130px;
+    padding-right: 130px;
+    scroll-margin-top: 100px;
+  
+}
+
+.ourprogram h2 {
+  text-align: center;
+  font-family: 'Fira Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 72px;
+  color: #6452A2;
+}
+
+.OurProgramsCard {
+  background-color: #e7f6f3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 5% 0 5%;
+  gap: 10%;
+  padding-bottom: 20px;
+}
+
+.OurProgramsSmallCards {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3%;
+  background-color: #ffffff;
+  border-radius: 10px;
+  /* box-shadow: 0 2px 2px 1px rgba(0, 0, 0, 0.2); */
+  width: 50%;
+  min-height: 20px;
+  max-width: 700px;
+}
+
+
+.OurProgramsSmallCards h4 {
+  font-family: 'Fira Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 43px;
+  text-transform: capitalize;
+  color: #0A6154;
+  padding-bottom: 5%;
+  text-align: center;
+}
+
+.OurProgramsSmallCards p {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 35px;
+  color: #000000;
+  text-align: left;
+}
+
+
+.elements-row-1 {
+  margin: 0 13%;
+  display: flex;
+  margin-bottom: 69px;
+  justify-content: space-around;
+}
+
+.elements-row-2 {
+  margin: 0 4%;
+  display: flex;
+  margin-bottom: 65px;
+  justify-content: space-around;
+}
+
+.element {
+  width: 300px;
+  min-width: 270px;
+  height: 110px;
+  
+  border: 5px solid #398E82;
+  filter: drop-shadow(-3px 10px 20px rgba(0, 0, 0, 0.25));
+  border-radius: 20px;
+  display: flex;
+}
+
+.number {
+  background: #398E82;
+  font-family: 'PT Sans';
+  text-align: center;
+  width: 64px;
+
+  min-width: 64px;
+  
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 95px;
+  border-top-left-radius: 10%;
+  border-bottom-left-radius: 10%;
+  color: #FFFFFF;
+}
+
+.ele-text {
+  padding: 5%;
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 200;
+  font-size: 23px;
+  line-height: 25px;
+  text-transform: capitalize;
+  color: #000000;
+}
+
+.quote {
+  background-image: url(img/quote-block.svg);
+  height: 640px;
+  width: 100%;
+  border-radius: 8px;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 80px;
+}
+.quote-first-line {
+  padding-top: 5%;
+  display: flex;
+  justify-content: center;
+}
+#finance {
+  height: auto;
+  object-fit: contain;
+  margin: 2%;
+}
+
+#left-quote {
+  height: 60%;
+}
+
+#right-quote {
+  padding-top: 10%;
+}
+
+#alan {
+  display: block;
+  margin-left: auto;
+  margin-right: 25%;
+}
+
+.divider {
+  box-sizing: border-box;
+  margin: 0 5%;
+
+
+border: 8px dashed rgba(92, 193, 178, 0.7);
+box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.polygon2 {
+  margin-top: -130px;
+}
+
+/* Our Programs Design Portion */
+
+.programTitle {
+  font-size: 40px;
+  font-family: "Fira Sans", "PT Sans", sans-serif;
+  font-weight: bold;
+  color: #6352a2;
+  text-align: center;
+  padding-top: 30px;
+  background-color:#a9cdc8;
+}
+
+.programs {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background-color:#a9cdc8;
+  padding-bottom: 30px;
+}
+
+.columns {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  width: 50%;
+  height: auto;
+}
+
+.communityHeader, .sustainHeader {
+  font-size: 45px;
+  font-family: "PT Sans", "Metropolis", sans-serif;
+  color: #6352a2;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.box {
+  width: 450px;
+  height: auto;
+  filter: drop-shadow(-3px 10px 20px rgba(0, 0, 0, 0.25));
+  background-color: #e7f6f3;
+  border-radius: 20px;
+  padding: 20px 20px 20px 20px;
+  margin-top: 30px;
+}
+
+.boxHead {
+  font-size: 30px;
+  font-weight: bold;;
+  font-family: "PT Sans", "Metropolis", sans-serif;
+  color:#0a6154;
+  padding: 5px 5px 5px 5px;
+}
+
+.boxBody {
+  font-size: 17px;
+  line-height: 1.5;
+  font-family: "PT Sans", "Metropolis", sans-serif;
+  text-align: left;
+  color: black;
+  padding: 5px 5px 5px 5px;
+}
