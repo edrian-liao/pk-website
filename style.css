@@ -914,7 +914,7 @@ box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
   color: black;
   padding: 5px 5px 5px 5px;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480px) {
   .navBar {
     flex-direction: column;
     align-items: flex-start;
@@ -937,16 +937,27 @@ box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
   }
 
   #hero-1 img, #hero-2 img, #hero-3 img {
-    width: 100%;
+    width: 90vw;
     order: 2; 
     margin-left: 0;
-    margin-top: 20px; 
   }
 
-  .hero1Text, .hero2Text, .hero3Text {
+  .hero1Text {
+    width: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 5px;
+    order: 1; 
+    text-align: center; 
+  }
+  .hero2Text, .hero3Text {
     width: 100%;
     padding-left: 5%;
     padding-right: 5%;
+    margin: 5px;
+    padding-bottom: 0vh;
+    margin-top: 15vh;
+    height: 25vh;
     order: 1; 
     text-align: center; 
   }
@@ -970,6 +981,7 @@ box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
   .footerLinks ul {
     padding-top: 0px;
     padding-bottom: 0px;
+    width: auto;
   }
 
   .logoInfoFooter p {
@@ -999,6 +1011,7 @@ box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
     align-self: center;
     align-items: center;
     justify-content: center;
+    width: 90vw;
   }
 
   .logoInfoFooter p, .footerLinks a, .socials p {
@@ -1006,4 +1019,72 @@ box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
     padding-right: 10px; /* Adjust the right padding */
   }
 
+}
+@media only screen and (max-width: 768px) {
+  .heroContent {
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center-align content */
+  }
+
+  .hero1Text, .hero2Text, .hero3Text {
+    width: 100%;
+    padding-bottom: 10px;
+    text-align: center; 
+  }
+
+  .heroContent h1 {
+    font-size: 28px;
+    padding-bottom: 10px;
+    order: 1;
+  }
+
+  .heroContent p {
+    font-size: 16px; 
+    order: 2,
+  }
+
+  .heroContent img {
+    width: 100%;
+    height: auto;
+    margin-top: 20px; 
+  }
+  .footerContainer {
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center-align content */
+    gap: 20px; /* Space between elements */
+    padding: 20px; /* Padding around the container */
+  }
+
+  .logoInfoFooter, .footerLinks, .socials {
+    width: 100%; /* Full width for footer sections */
+    text-align: center; /* Center text alignment */
+    padding: 10px; /* Padding for each section */
+  }
+
+  .footerLinks ul{
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-self: auto;
+    align-items: center; 
+    gap: 10px; 
+  }
+  .socials ul {
+    display: flex; 
+    flex-direction: row; 
+    justify-content: center; 
+    align-self: auto;
+    align-items: center; 
+    gap: 10px; 
+  }
+
+  .footerLogo {
+    width: 70px;
+    height: auto; 
+  }
+
+  .socials img {
+    width: 30px;
+    height: auto;
+  }
 }
