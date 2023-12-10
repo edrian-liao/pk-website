@@ -914,3 +914,52 @@ box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
   color: black;
   padding: 5px 5px 5px 5px;
 }
+
+/*start of arla's edit*/
+@media (0px <= width <= 375px){
+  html{
+    margin: 0 0;
+  }
+  body{
+    overflow-x: hidden;
+  }
+  .top{
+    margin: 0;
+    padding: 0 0 0 3rem;
+  }
+  .navBar-container{
+    padding: 0 3rem;
+  }
+  .getInvolvedCards{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+  }
+  .cards{
+    margin: 2em 0;
+    width: 90%;
+  }
+  .getInvolvedCardHeader{
+    margin: 0.5rem 1rem;
+  }
+  .cards.content{
+    margin:0;
+    padding: 0;
+  }
+  .getInvolvedCards button{
+    margin-top: 0;
+  }
+  .getInvolvedCards.content{
+    margin-bottom: 0;
+    padding-bottom: 3px;
+  }
+  .footerContainer{
+    flex-direction: column;
+    align-items: center;
+  }
+  .footerContainer ul{
+    padding: 0.2rem;
+  }
+
+}
