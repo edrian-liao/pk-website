@@ -8,19 +8,26 @@
     <title>Project Kayamanan</title>
   </head>
   <body>
-    <!-- Header & Hero -->
-    <header class="navBar-container">
-      <ul class="navBar">
-        <img src="img/logo.png" />
-        <div class="headerLinks">
-          <li><a href="index.html">HOME</a></li>
-          <li><a href="about.html">ABOUT</a></li>
-          <li><a href="ourprogram.html">OUR PROGRAMS</a></li>
-          <li><a href="get_involved.html">GET INVOLVED</a></li>
-          <li><a href="signup.html"><button >SIGN UP</button></a></li>
-        </div>
-      </ul>
-    </header>
+    <div class="top">
+      <!-- Hamburger icon button for small screens -->
+      <header class="navBar-container">
+        <ul class="navBar">
+          <img src="img/logo.png" />
+          <div class="hamburger" id="hamburgerIcon">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </div>
+          <div class="headerLinks">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="ourprogram.html">OUR PROGRAMS</a></li>
+            <li><a href="get_involved.html">GET INVOLVED</a></li>
+            <li><a href="signup.html"><button >SIGN UP</button></a></li>
+          </div>
+        </ul>
+      </header>
+    </div>
 
     <div class = "programTitle"><h1>Our Programs</h1></div>
     <div class="programs">
@@ -107,6 +114,6 @@
         </div>
       </div>
     </footer>
-        
+    <script type="module" src="script.js"></script>
   </body>
 </html>

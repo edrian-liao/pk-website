@@ -24,6 +24,15 @@ const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
 const db = getDatabase(app);
 
+var hamburgerIcon = document.getElementById("hamburgerIcon");
+var headerLinks = document.querySelector(".headerLinks");
+
+if (hamburgerIcon) {
+    hamburgerIcon.addEventListener("click", function () {
+        headerLinks.classList.toggle("active");
+    });
+}
+
 document.getElementById('signupForm').addEventListener('submit', function(e) {
 e.preventDefault();
 set(ref(db, 'users/' + Math.random().toString(36).slice(2, 7)), {
@@ -40,11 +49,3 @@ alert('Your form is submitted');
 document.getElementById('signupForm').reset();
 });
 
-document.addEventListener("DOMContentLoaded", function () {
-    var hamburgerIcon = document.getElementById("hamburgerIcon");
-    var headerLinks = document.querySelector(".headerLinks");
-
-    hamburgerIcon.addEventListener("click", function () {
-        headerLinks.classList.toggle("active");
-    });
-});
