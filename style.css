@@ -935,7 +935,126 @@ box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
   padding: 5px 5px 5px 5px;
 }
 
-@media(max-width: 900px) {
+@media only screen and (max-width: 950px) {
+  .heroContent {
+    flex-direction: row; /* Stack elements vertically */
+    align-items: center; /* Center-align content */
+  }
+  #hero-2 img {
+    height: auto;
+    margin-top: 10px; 
+  }
+  #hero-3 img {
+    height: auto;
+    margin-top: 100px; 
+  }
+  
+  .hero1Text {
+    width: 100%;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    text-align: center; 
+  }
+  .hero2Text, .hero3Text {
+    width: 100%;
+    padding-bottom: 10px;
+    margin-top: 50px;
+    text-align: center; 
+  }
+
+
+  .heroContent h1 {
+    font-size: 28px;
+    margin-top: 10px;
+    padding-bottom: 10px;
+    order: 1;
+  }
+  
+  .heroContent p {
+    font-size: 16px; 
+    order: 2,
+  }
+
+  .heroContent img {
+    width: 100%;
+    height: auto;
+    margin-top: 20px; 
+  }
+ 
+  .programTitle {
+    font-size: 30px;
+    padding: 10px;
+    padding-top: 40px;
+  }
+  .communityHeader, .sustainHeader {
+    font-size: 32px;
+  }
+  .programs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:#a9cdc8;
+    padding-bottom: 30px;
+  }
+
+  .box {
+    width: 350px;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    filter: drop-shadow(-3px 10px 20px rgba(0, 0, 0, 0.25));
+    background-color: #e7f6f3;
+    border-radius: 20px;
+    padding: 20px 20px 20px 20px;
+    margin-top: 30px;
+  }
+  
+  .boxHead {
+    font-size: 22px;
+    font-weight: bold;
+    font-family: "PT Sans", "Metropolis", sans-serif;
+    color:#0a6154;
+    padding: 5px 5px 5px 5px;
+  }
+  
+  .boxBody {
+    font-size: 18px;
+    line-height: 1.5;
+    align-items: center;
+    justify-content: center;
+    font-family: "PT Sans", "Metropolis", sans-serif;
+    text-align: left;
+    color: black;
+    padding: 5px 5px 5px 5px;
+  }
+  .heroslides {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 30px;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  
+  .heroslides::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .heroslides div {
+    scroll-snap-align: start;
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+    transform-origin: center center;
+    transform: scale(1);
+    transition: transform 0.5s;
+    position: relative;
+    overflow-x: visible;
+    padding-bottom: 50px;
+  }
   .navBar img {
     width: 40%;
   }
@@ -1036,7 +1155,7 @@ box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
   
 }
 
-@media(max-width: 600px) {
+@media only screen and (max-width: 650px) {
   .signupContent {
     margin: 0 auto;
     margin-top: 17%;
@@ -1053,5 +1172,344 @@ box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
 
   .signupPolygons {
     height: 30px;
+  }
+  .heroslides {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 20px;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  
+  .heroslides::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .heroslides div {
+    scroll-snap-align: start;
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+    transform-origin: center center;
+    transform: scale(1);
+    transition: transform 0.5s;
+    position: relative;
+    overflow-x: visible;
+    padding-bottom: 50px;
+  }
+
+  .navBar {
+    flex-direction: column;
+    align-items: flex-start;
+    height: 10%;
+  }
+  .navBar li {
+    font-size: 12px;
+    margin-right: 0%;
+  }
+  .headerLinks {
+    flex-direction: row; /* Stack links vertically */
+    align-items: flex-start; /* Align links to the start of the navBar */
+    padding-right: 0; /* Remove right padding */
+    gap: 3%;
+  }
+  .navBar li button {
+    height: 30px;
+    width: 60px;
+    font-size: 12px;
+  }
+
+  #hero-1 img {
+    width: 90vw;
+    order: 2; 
+    margin-left:0;
+    margin-top: 50px;
+  }
+  #hero-2 img, #hero-3 img {
+    width: 90vw;
+    order: 2; 
+    margin-left: 0;
+    margin-top: 10px;
+    padding: 0px;
+  }
+
+  .hero1Text {
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 20px;
+    order: 1; 
+    text-align: center; 
+  }
+  .hero1Text button {
+    width: auto; /* Or specify a width that fits */
+    margin: 10px 0; /* Add margin for spacing */
+    /* Other styling as needed */
+  }
+
+  .hero2Text, .hero3Text {
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-top: 10px;
+    padding-bottom: 0vh;
+    order: 1; 
+    text-align: center; 
+  }
+
+  .heroContent h1 {
+    font-size: 32px; 
+  }
+
+  #hero-1 {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+  }
+  #hero-2, #hero-3 {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -25px;
+  }
+
+  #hero-1 p, #hero-2 p, #hero-3 p {
+    width: 100%;
+    font-size: 20px;
+  }
+
+
+  .footerLinks ul {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    width: auto;
+  }
+
+  .logoInfoFooter p {
+    flex-direction: flex-start;
+    padding-left: 0px;
+    padding-right: 0px;
+    font-size: 15px;
+  }
+
+  .footerContainer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  .footerLogo {
+    height: 70px;
+    align-self: center;
+  }
+
+  .logoInfoFooter, .footerLinks, .socials {
+    width: 100%; /* Make sure these take full width to reduce left and right gaps */
+    padding: 0 10px; /* Adjust the padding to reduce the size of left/right gaps */
+    text-align: center; /* Center-align the text */
+  }
+  .socials ul {
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    width: 90vw;
+  }
+
+  .logoInfoFooter p, .footerLinks a, .socials p {
+    padding-left: 10px; /* Adjust the left padding */
+    padding-right: 10px; /* Adjust the right padding */
+  }
+  .programTitle {
+    font-size: 30px;
+    padding: 10px;
+    padding-top: 40px;
+  }
+  .communityHeader, .sustainHeader {
+    font-size: 32px;
+  }
+  .programs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:#a9cdc8;
+    padding-bottom: 30px;
+  }
+
+  .box {
+    width: 350px;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    filter: drop-shadow(-3px 10px 20px rgba(0, 0, 0, 0.25));
+    background-color: #e7f6f3;
+    border-radius: 20px;
+    padding: 20px 20px 20px 20px;
+    margin-top: 30px;
+  }
+  
+  .boxHead {
+    font-size: 22px;
+    font-weight: bold;
+    font-family: "PT Sans", "Metropolis", sans-serif;
+    color:#0a6154;
+    padding: 5px 5px 5px 5px;
+  }
+  
+  .boxBody {
+    font-size: 18px;
+    line-height: 1.5;
+    align-items: center;
+    justify-content: center;
+    font-family: "PT Sans", "Metropolis", sans-serif;
+    text-align: left;
+    color: black;
+    padding: 5px 5px 5px 5px;
+  }
+}
+@media only screen and (max-width: 1350px) {
+  .heroContent {
+    flex-direction: row; /* Stack elements vertically */
+    align-items: center; /* Center-align content */
+  }
+
+  .hero1Text, .hero2Text, .hero3Text {
+    width: 100%;
+    padding-bottom: 10px;
+    text-align: center; 
+  }
+
+  .heroContent h1 {
+    font-size: 32px;
+    padding-bottom: 10px;
+    order: 1;
+  }
+  
+  .heroContent p {
+    font-size: 22px; 
+    order: 2,
+  }
+
+  .heroContent img {
+    width: 100%;
+    height: auto;
+    margin-top: 20px; 
+  }
+  .footerContainer {
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center-align content */
+    gap: 20px; /* Space between elements */
+    padding: 20px; /* Padding around the container */
+  }
+
+  .logoInfoFooter, .footerLinks, .socials {
+    width: 100%; /* Full width for footer sections */
+    text-align: center; /* Center text alignment */
+    padding: 10px; /* Padding for each section */
+  }
+
+  .footerLinks ul{
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-self: auto;
+    align-items: center; 
+    gap: 10px; 
+  }
+  .socials ul {
+    display: flex; 
+    flex-direction: row; 
+    justify-content: center; 
+    align-self: auto;
+    align-items: center; 
+    gap: 10px; 
+  }
+
+  .footerLogo {
+    width: 70px;
+    height: auto; 
+  }
+
+  .socials img {
+    width: 30px;
+    height: auto;
+  }
+  .programTitle {
+    font-size: 30px;
+    padding: 10px;
+    padding-top: 40px;
+  }
+  .communityHeader, .sustainHeader {
+    font-size: 32px;
+  }
+  .programs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:#a9cdc8;
+    padding-bottom: 30px;
+  }
+
+  .box {
+    width: 350px;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    filter: drop-shadow(-3px 10px 20px rgba(0, 0, 0, 0.25));
+    background-color: #e7f6f3;
+    border-radius: 20px;
+    padding: 20px 20px 20px 20px;
+    margin-top: 30px;
+  }
+  
+  .boxHead {
+    font-size: 22px;
+    font-weight: bold;
+    font-family: "PT Sans", "Metropolis", sans-serif;
+    color:#0a6154;
+    padding: 5px 5px 5px 5px;
+  }
+  
+  .boxBody {
+    font-size: 18px;
+    line-height: 1.5;
+    align-items: center;
+    justify-content: center;
+    font-family: "PT Sans", "Metropolis", sans-serif;
+    text-align: left;
+    color: black;
+    padding: 5px 5px 5px 5px;
+  }
+  .heroslides {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 30px;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  
+  .heroslides::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .heroslides div {
+    scroll-snap-align: start;
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+    transform-origin: center center;
+    transform: scale(1);
+    transition: transform 0.5s;
+    position: relative;
+    overflow-x: visible;
+    padding-bottom: 50px;
   }
 }
