@@ -817,10 +817,10 @@ header {
   background-color: #8EE2BF;
   margin: 1.5rem;
   border-radius: 30px;
-  padding: 1em;
-  font-size: 1.5rem;
-  text-align: center;
-  font-family: "monospace";
+  padding: 1.5em;
+  font-size: 1.4rem;
+  text-align: left;
+  font-family: 'PT Sans';
 }
 .quote-first-line {
   padding-top: 5%;
@@ -999,7 +999,7 @@ box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
   }
   
   .aboutusText {
-    margin: 40px;
+    margin: 1.8rem;
   }
   
   .aboutusContent h1 {
@@ -1009,7 +1009,7 @@ box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
   }
   
   .aboutusContent p {
-    padding-top: 30px;
+    padding: 0.5rem;
     font-family: "PT Sans", "Metropolis", sans-serif;
     text-align: left;
     font-size: 18px;
