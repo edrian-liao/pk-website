@@ -749,6 +749,9 @@ header {
   text-align: left;
 }
 
+.elements{
+  margin-bottom: 5rem;
+}
 
 .elements-row-1 {
   margin: 0 13%;
@@ -804,18 +807,26 @@ header {
 }
 
 .quote {
-  background-image: url(img/quote-block.svg);
-  height: 640px;
+  /* background-image: url(img/quote-block.svg); */
+  /* height: 640px;
   width: 100%;
   border-radius: 8px;
   background-repeat: no-repeat;
   background-position: center;
-  margin-bottom: 80px;
+  margin-bottom: 80px; */
+  background-color: #8EE2BF;
+  margin: 1.5rem;
+  border-radius: 30px;
+  padding: 1em;
+  font-size: 1.5rem;
+  text-align: center;
+  font-family: "monospace";
 }
 .quote-first-line {
   padding-top: 5%;
   display: flex;
   justify-content: center;
+  margin-bottom: 2rem;
 }
 #finance {
   height: auto;
@@ -828,13 +839,14 @@ header {
 }
 
 #right-quote {
-  padding-top: 10%;
+  padding-top: 158%;
 }
 
 #alan {
   display: block;
   margin-left: auto;
   margin-right: 25%;
+  text-align: center;
 }
 
 .divider {
@@ -966,8 +978,137 @@ box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
     display: none;
   }
 
+  .ourobjectives{
+    padding-bottom: 1.3rem;
+  }
   /* the about us card starts here */
 
+  .aboutus {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 3rem;
+    padding-top: 20px;
+  }
+
+  .aboutusContent img {
+    padding: 0;
+    margin: 2rem 0 2rem 2.3rem;
+    width: 80%;
+    display: inline;
+  }
+  
+  .aboutusText {
+    margin: 40px;
+  }
+  
+  .aboutusContent h1 {
+    font-size: 40px;
+    line-height: 50px;
+    padding-bottom: 0;
+  }
+  
+  .aboutusContent p {
+    padding-top: 30px;
+    font-family: "PT Sans", "Metropolis", sans-serif;
+    text-align: left;
+    font-size: 18px;
+    line-height: 1.5;
+  }
+  
+  .aboutuscards {
+    position: static;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    min-height: 300px;
+    padding-bottom: 20px;
+  }
+
+  .ourobjectives h2 {
+    margin-bottom: 0;
+    margin-top: 4rem;
+  }
+/*starts here*/
+  
+  .elements-row-1 {
+    display: flex;
+    flex-direction: column;
+    margin: 1.25rem 3rem 3rem;
+    gap: 50px;
+    padding-left: 0.5rem;
+  }
+
+  .elements-row-2 {
+    display: flex;
+    flex-direction: column;
+    margin: 0rem 3rem 3rem;
+    gap: 50px;
+    padding-left: 0.5rem;
+  }
+
+  .element {
+    width: 200px;
+    min-width: 270px;
+    height: 75px;
+    gap: 0.5rem;
+  }
+
+  .elements .element .number { 
+    line-height: 4.2rem;
+  }
+
+  .ele-text {
+    padding: 0;
+    padding-top: 0.7rem;
+    padding-right: 0.5rem;
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 0.85rem;
+    line-height: 1.25rem;
+  }
+
+  #right-quote {
+    padding-top: 34rem;
+  }
+}
+
+@media (min-width: 421px) and (max-width: 600px){
+  .getInvolved {
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+  }
+
+  .getInvolvedCards{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0 1.5rem;
+  }
+  .cards{
+    margin: 2em 0;
+    width: 90%;
+  }
+  .getInvolvedCardHeader{
+    margin: 0.5rem 1rem;
+  }
+  .cards.content{
+    margin:0;
+    padding: 0;
+  }
+  .getInvolvedCards button{
+    margin-top: 0;
+  }
+  .getInvolvedCards.content{
+    margin-bottom: 0;
+    padding-bottom: 3px;
+  }
+
+  .polygon, .polygon2{
+    display: none;
+  }
   .aboutus {
     display: flex;
     flex-direction: column;
@@ -1013,15 +1154,15 @@ box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
 
   .ourobjectives h2 {
     margin-bottom: 0;
+    margin-top: 4rem;
   }
-/*starts here*/
   
 .elements-row-1 {
   display: flex;
   flex-direction: column;
   margin: 1.25rem 3rem 3rem;
   gap: 50px;
-
+  padding-left: 1.3rem;
 }
 
 .elements-row-2 {
@@ -1029,6 +1170,7 @@ box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
   flex-direction: column;
   margin: 0rem 3rem 3rem;
   gap: 50px;
+  padding-left: 1.3rem;
 }
 
 .element {
@@ -1038,22 +1180,8 @@ box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
   gap: 0.5rem;
 }
 
-p .number {
-  background: #398E82;
-  font-family: 'PT Sans';
-  text-align: center;
-  width: 64px;
-
-  min-width: 64px;
-  
-  font-style: normal;
-  font-weight: 400;
-  font-size: 40px;
-  line-height: 0px;
-  border-top-left-radius: 10%;
-  border-bottom-left-radius: 10%;
-  color: #FFFFFF;
-  vertical-align: middle;
+.elements .element .number { 
+  line-height: 4.2rem;
 }
 
 .ele-text {
@@ -1066,93 +1194,10 @@ p .number {
   font-size: 0.85rem;
   line-height: 1.25rem;
 }
-
-.quote {
-  background-image: url(img/quote-block.svg);
-  height: 640px;
-  width: 100%;
-  border-radius: 8px;
-  background-repeat: no-repeat;
-  background-position: center;
-  margin-bottom: 80px;
-}
-.quote-first-line {
-  padding-top: 5%;
-  display: flex;
-  justify-content: center;
-}
-#finance {
-  height: 65px;
-  object-fit: contain;
-  margin: 2%;
-}
-
-#left-quote {
-  height: 60%;
-}
-
-#right-quote {
-  padding-top: 10%;
-}
-
-#alan {
-  display: block;
-  margin-left: auto;
-  margin-right: 25%;
-}
-  /* .footerContainer{
-    flex-direction: column;
-    align-items: center;
-    padding: 0;
-    margin: 0;
-  }
-  .footerLinks ul{
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-    padding: 0;
-  }
-  .socials p{
-    padding: 0;
-    margin: 0;
-  }
-  .socials ul{
-    padding: 0;
-    margin: 0;
-  } */
-
-}
-
-@media (min-width: 421px) and (max-width: 600px){
-  .getInvolved {
-    padding-top: 3rem;
-    padding-bottom: 1rem;
+  #right-quote {
+    padding-top: 140%;
   }
 
-  .getInvolvedCards{
-    display: flex;
-    flex-direction: column;
-    padding: 0;
-    margin: 0 1.5rem;
-  }
-  .cards{
-    margin: 2em 0;
-    width: 90%;
-  }
-  .getInvolvedCardHeader{
-    margin: 0.5rem 1rem;
-  }
-  .cards.content{
-    margin:0;
-    padding: 0;
-  }
-  .getInvolvedCards button{
-    margin-top: 0;
-  }
-  .getInvolvedCards.content{
-    margin-bottom: 0;
-    padding-bottom: 3px;
-  }
 }
 
 @media (min-width: 601px) and (max-width: 768){
@@ -1185,4 +1230,220 @@ p .number {
     margin-bottom: 0;
     padding-bottom: 3px;
   }
+
+  .polygon, .polygon2{
+    display: none;
+  }
+  .aboutus {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 3rem;
+    padding-top: 20px;
+  }
+
+  .aboutusContent img {
+    padding: 0;
+    margin: 2rem 0 2rem 2.3rem;
+    width: 80%;
+    display: inline;
+  }
+  
+  .aboutusText {
+    margin: 40px;
+  }
+  
+  .aboutusContent h1 {
+    font-size: 40px;
+    line-height: 50px;
+    padding-bottom: 0;
+  }
+  
+  .aboutusContent p {
+    padding-top: 20px;
+    font-family: "PT Sans", "Metropolis", sans-serif;
+    text-align: left;
+    font-size: 18px;
+    line-height: 1.5;
+  }
+  
+  .aboutuscards {
+    position: static;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    min-height: 300px;
+    padding-bottom: 20px;
+  }
+
+  .ourobjectives h2 {
+    margin-bottom: 0;
+    margin-top: 4rem;
+  }
+  
+.elements-row-1 {
+  display: flex;
+  flex-direction: column;
+  margin: 1.25rem 3rem 3rem;
+  gap: 50px;
+  padding-left: 1.3rem;
+}
+
+.elements-row-2 {
+  display: flex;
+  flex-direction: column;
+  margin: 0rem 3rem 3rem;
+  gap: 50px;
+  padding-left: 1.3rem;
+}
+
+.element {
+  width: 200px;
+  min-width: 270px;
+  height: 75px;
+  gap: 0.5rem;
+}
+
+.elements .element .number { 
+  line-height: 4.2rem;
+}
+
+.ele-text {
+  padding: 0;
+  padding-top: 0.7rem;
+  padding-right: 0.5rem;
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 200;
+  font-size: 0.85rem;
+  line-height: 1.25rem;
+}
+#right-quote {
+  padding-top: 140%;
+}
+}
+
+@media (min-width: 767px) and (max-width: 992){
+  .getInvolved {
+    padding-top: 0.1rem;
+    padding-bottom: 1rem;
+  }
+
+  .getInvolvedCards{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0 1.5rem;
+  }
+  .cards{
+    margin: 2em 0;
+    width: 90%;
+  }
+  .getInvolvedCardHeader{
+    margin: 0.5rem 1rem;
+  }
+  .cards.content{
+    margin:0;
+    padding: 0;
+  }
+  .getInvolvedCards button{
+    margin-top: 0;
+  }
+  .getInvolvedCards.content{
+    margin-bottom: 0;
+    padding-bottom: 3px;
+  }
+
+  .polygon, .polygon2{
+    display: none;
+  }
+  .aboutus {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 3rem;
+    padding-top: 20px;
+  }
+
+  .aboutusContent img {
+    padding: 0;
+    margin: 2rem 0 2rem 2.3rem;
+    width: 80%;
+    display: inline;
+  }
+  
+  .aboutusText {
+    margin: 40px;
+  }
+  
+  .aboutusContent h1 {
+    font-size: 40px;
+    line-height: 50px;
+    padding-bottom: 0;
+  }
+  
+  .aboutusContent p {
+    padding-top: 20px;
+    font-family: "PT Sans", "Metropolis", sans-serif;
+    text-align: left;
+    font-size: 18px;
+    line-height: 1.5;
+  }
+  
+  .aboutuscards {
+    position: static;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    min-height: 300px;
+    padding-bottom: 20px;
+  }
+
+  .ourobjectives h2 {
+    margin-bottom: 0;
+    margin-top: 4rem;
+  }
+  
+.elements-row-1 {
+  display: flex;
+  flex-direction: column;
+  margin: 1.25rem 3rem 3rem;
+  gap: 50px;
+  padding-left: 1.3rem;
+}
+
+.elements-row-2 {
+  display: flex;
+  flex-direction: column;
+  margin: 0rem 3rem 3rem;
+  gap: 50px;
+  padding-left: 1.3rem;
+}
+
+.element {
+  width: 200px;
+  min-width: 270px;
+  height: 75px;
+  gap: 0.5rem;
+}
+
+.elements .element .number { 
+  line-height: 4.2rem;
+}
+
+.ele-text {
+  padding: 0;
+  padding-top: 0.7rem;
+  padding-right: 0.5rem;
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 200;
+  font-size: 0.85rem;
+  line-height: 1.25rem;
+}
+#right-quote {
+  padding-top: 140%;
+}
 }
