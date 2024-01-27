@@ -847,7 +847,7 @@ header {
   font-family: 'PT Sans';
 }
 .quote-first-line {
-  padding-top: 5%;
+  padding-top: 1rem;
   display: flex;
   justify-content: center;
   margin-bottom: 2rem;
@@ -1340,6 +1340,7 @@ box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
   padding-top: 140%;
 }
 }
+
 
 @media (min-width: 767px) and (max-width: 992){
   .getInvolved {
