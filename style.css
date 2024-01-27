@@ -119,6 +119,7 @@ header {
 
 .navBar li button:hover {
   color: #6452a2;
+  cursor: pointer;
 }
 
 .hero {
@@ -337,7 +338,7 @@ header {
 }
 
 .aboutusContent p {
-  padding-top: 20px;
+  padding-top: 1rem;
   font-family: "PT Sans", "Metropolis", sans-serif;
   text-align: left;
   font-size: 18px;
