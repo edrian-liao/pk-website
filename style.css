@@ -277,6 +277,7 @@ header {
 }
 
 #hero-1 button {
+  cursor: pointer;
   position: absolute;
   height: 50px;
   width: 140px;
@@ -493,6 +494,7 @@ header {
 }
 
 .cards button {
+  cursor: pointer;
   height: 50px;
   width: 100px;
   background-color: #0a6154;
@@ -616,6 +618,7 @@ header {
 }
 
 .signupContent button {
+  cursor: pointer;
   display: block;
   margin: 40px auto;
   height: 35px;
