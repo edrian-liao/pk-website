@@ -67,6 +67,7 @@ header {
   background-color: white;
   box-shadow: 0 2px 2px 1px rgba(0, 0, 0, 0.2);
   height: auto;
+  padding: 10px;
 }
 
 .navBar-container {
@@ -342,14 +343,14 @@ header {
   padding-top: 1rem;
   font-family: "PT Sans", "Metropolis", sans-serif;
   text-align: left;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 1.5;
 }
 
 .aboutusContent img {
   border: 8px solid #398e82;
   border-radius: 40px;
-  padding-bottom: 20px;
+  /* padding-bottom: 20px; */
   display: flex;
   gap: 3%;
   width: 45%;
@@ -404,9 +405,9 @@ header {
 
 .getInvolved h2 {
   font-family: "Fira Sans", sans-serif;
-  font-weight: normal;
+  font-weight: 600;
   text-align: center;
-  font-size: 40px;
+  font-size: 60px;
   color: #6352a2;
   padding-left: 5%;
   padding-right: 5%;
@@ -436,7 +437,7 @@ header {
   flex-direction: column;
   align-items: center;
   padding: 5%;
-  background-color: #ffffff;
+  background-color: #ffefc3;
   border-radius: 10px;
   box-shadow: 0 2px 2px 1px rgba(0, 0, 0, 0.2);
   width: 50%;
@@ -487,10 +488,11 @@ header {
   font-family: "PT Sans", "Metropolis", sans-serif;
   text-align: left;
   font-size: 15px;
-  padding-left: 5%;
-  padding-right: 5%;
+  padding-left: 2%;
+  padding-right: 2%;
   line-height: 1.5;
   padding-bottom: 100px;
+  font-size: 18px;
 }
 
 .cards button {
@@ -666,6 +668,7 @@ header {
 .footerLinks ul {
   padding-top: 40px;
   padding-bottom: 50px;
+  list-style-type: none;
 }
 
 .footerLinks li {
@@ -710,8 +713,8 @@ header {
   text-align: center;
   font-family: 'Fira Sans';
   font-style: normal;
-  font-weight: 400;
-  font-size: 40px;
+  font-weight: 600;
+  font-size: 60px;
   line-height: 72px;
   color: #6452A2;
 }
@@ -939,7 +942,7 @@ box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
   width: 450px;
   height: auto;
   filter: drop-shadow(-3px 10px 20px rgba(0, 0, 0, 0.25));
-  background-color: #e7f6f3;
+  background-color: #ffefc3;
   border-radius: 20px;
   padding: 20px 20px 20px 20px;
   margin-top: 30px;
@@ -1627,6 +1630,7 @@ box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
     padding: 10px; /* Add some padding */
     position: absolute;
     top: 0;
+    left: 0;
     background-color: #0A6154;
     z-index: 1000;
     width: 100%;
@@ -1747,7 +1751,7 @@ box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
     padding-bottom: 50px;
   }
 
-  .navBar {
+  /* .navBar {
     flex-direction: column;
     align-items: flex-start;
     height: 10%;
@@ -1755,11 +1759,11 @@ box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
   .navBar li {
     font-size: 12px;
     margin-right: 0%;
-  }
+  } */
   .headerLinks {
-    flex-direction: row; /* Stack links vertically */
-    align-items: flex-start; /* Align links to the start of the navBar */
-    padding-right: 0; /* Remove right padding */
+    /* flex-direction: row; Stack links vertically */
+    /* align-items: flex-start; Align links to the start of the navBar */
+    /* padding-right: 0; Remove right padding */
     gap: 3%;
   }
   .navBar li button {
@@ -1857,12 +1861,6 @@ box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
     width: 100%; /* Make sure these take full width to reduce left and right gaps */
     padding: 0 10px; /* Adjust the padding to reduce the size of left/right gaps */
     text-align: center; /* Center-align the text */
-  }
-  .socials ul {
-    align-self: center;
-    align-items: center;
-    justify-content: center;
-    width: 90vw;
   }
 
   .logoInfoFooter p, .footerLinks a, .socials p {
@@ -2008,7 +2006,6 @@ box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
     justify-content: center;
     height: auto;
     filter: drop-shadow(-3px 10px 20px rgba(0, 0, 0, 0.25));
-    background-color: #ffefc3;
     border-radius: 20px;
     padding: 20px 20px 20px 20px;
     margin-top: 30px;
