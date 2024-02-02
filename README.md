@@ -1,4 +1,4 @@
-# Project Kayamananan
+# Project Kayamanan
 
 Project Kayamanan is a non-profit organization in the Philippines funded by the Young Southeast Asian Leaders Initiative (YSEALI) that aims to provide financial literacy coaching sessions to high school students. Last October 2022, I was part of a team of 4 (1 product manager and software engineers) tasked to build a website for them to expand their reach throughout Manila and the other island groups in the Philippines.
 
