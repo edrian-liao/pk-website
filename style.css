@@ -256,7 +256,7 @@ header {
 }
 
 #hero-2 img {
-  width: 15%;
+  width: 18rem;
   height: auto;
   flex: 0 1 auto;
   float: left;
@@ -267,7 +267,7 @@ header {
 }
 
 #hero-3 img {
-  width: 15%;
+  width: 18rem;
   height: auto;
   display: flex;
   flex: 0 1 auto;
@@ -969,7 +969,9 @@ box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
     margin-top: 4rem;
   }
   #hero-2 img, #hero-3 img{
-    height: 1rem;
+    width: 1rem;
+    height: auto;
+    object-fit: scale-down;
   }
   .navBar-container{
     padding: 0 3rem;
