@@ -637,7 +637,7 @@ header {
 .footerContainer {
   padding-top: 20px;
   display: flex;
-  background-color: #6452a2;
+  background-color: #a295cd;
   justify-content: space-between;
   align-items: left;
   gap: 100px;
@@ -720,7 +720,7 @@ header {
 }
 
 .ourprogram {
-    background-color: #ffefc3;
+    background-color: #e7f6f3;
     padding-bottom: 80px;
     padding-left: 130px;
     padding-right: 130px;
@@ -908,15 +908,16 @@ box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
   color: #6352a2;
   text-align: center;
   padding-top: 30px;
-  background-color:#a9cdc8;
+  background-color:#e7f6f3;
   margin-top: 7rem;
+  padding-top: 4rem;
 }
 
 .programs {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  background-color:#a9cdc8;
+  background-color:#e7f6f3;
   padding-bottom: 30px;
 }
 
@@ -1018,6 +1019,10 @@ box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
   }
   /* the about us card starts here */
 
+  .programTitle {
+    margin-top: 4rem;
+  }
+
   .aboutus {
     display: flex;
     flex-direction: column;
@@ -1114,6 +1119,10 @@ box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
   .getInvolved {
     padding-top: 3rem;
     padding-bottom: 1rem;
+  }
+
+  .programTitle {
+    margin-top: 5rem;
   }
 
   .getInvolvedCards{
@@ -1364,6 +1373,10 @@ box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
   .getInvolved {
     padding-top: 0.1rem;
     padding-bottom: 1rem;
+  }
+
+  .programTitle {
+    margin-top: 5rem;
   }
 
   .getInvolvedCards{
@@ -1996,7 +2009,7 @@ box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color:#a9cdc8;
+    background-color:#e7f6f3;
     padding-bottom: 30px; 
   }
 
@@ -2009,6 +2022,7 @@ box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
     border-radius: 20px;
     padding: 20px 20px 20px 20px;
     margin-top: 30px;
+    background-color: #ffefc3;
   }
   
   .boxHead {
