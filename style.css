@@ -31,7 +31,6 @@ body {
 
 .top {
   background-color: #FFEFC3;
-  /* height: auto; */
 }
 
 header {
@@ -186,7 +185,6 @@ header {
   margin-top: 80px;
   display: flex;
   flex: 1 0 auto;
-  /* flex-wrap: wrap; */
   gap: 3%;
 }
 
@@ -317,7 +315,6 @@ header {
   padding-bottom: 100px;
   padding-top: 100px;
   display: flex;
-  /* flex-wrap: wrap; */
   justify-content: center;
   height: auto;
   scroll-margin-top: 80px;
@@ -350,7 +347,6 @@ header {
 .aboutusContent img {
   border: 8px solid #398e82;
   border-radius: 40px;
-  /* padding-bottom: 20px; */
   display: flex;
   gap: 3%;
   width: 45%;
@@ -460,7 +456,6 @@ header {
   flex: 0 1 auto;
   float: right;
   display: flex;
-  /* margin-right: 5%; */
 }
 
 .cards h3 {
@@ -756,7 +751,6 @@ header {
   padding: 3%;
   background-color: #ffefc3;
   border-radius: 10px;
-  /* box-shadow: 0 2px 2px 1px rgba(0, 0, 0, 0.2); */
   width: 50%;
   min-height: 20px;
   max-width: 700px;
@@ -843,13 +837,6 @@ header {
 }
 
 .quote {
-  /* background-image: url(img/quote-block.svg); */
-  /* height: 640px;
-  width: 100%;
-  border-radius: 8px;
-  background-repeat: no-repeat;
-  background-position: center;
-  margin-bottom: 80px; */
   background-color: #398e82;
   margin: 1.5rem;
   border-radius: 30px;
@@ -1840,19 +1827,7 @@ box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
     padding-bottom: 50px;
   }
 
-  /* .navBar {
-    flex-direction: column;
-    align-items: flex-start;
-    height: 10%;
-  }
-  .navBar li {
-    font-size: 12px;
-    margin-right: 0%;
-  } */
   .headerLinks {
-    /* flex-direction: row; Stack links vertically */
-    /* align-items: flex-start; Align links to the start of the navBar */
-    /* padding-right: 0; Remove right padding */
     gap: 3%;
   }
   .navBar li button {
@@ -2085,7 +2060,6 @@ box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
     font-size: 30px;
     padding: 10px;
     padding-top: 40px;
-    /* margin-top: 7.5rem; <-Unsure about this edit on this line; trying to make navbar and start of page not collide */
   }
   .communityHeader, .sustainHeader {
     font-size: 32px;
