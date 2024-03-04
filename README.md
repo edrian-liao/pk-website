@@ -18,6 +18,8 @@ Google Firebase, JavaScript, HTML/CSS
 ## Acknowledgements
 
 Product Manager (PM): Edrian Liao
+
 Backend Software Engineer: Justin Aronwald
+
 Frontend Software Engineer: Arla Ragun
 
