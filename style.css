@@ -415,7 +415,7 @@ header {
 
 .getInvolved p {
   padding-top: 20px;
-  font-family: "Metropolis", "PT Sans", sans-serif;
+  font-family: "PT Sans", sans-serif;
   text-align: center;
   font-size: 18px;
   padding-left: 15%;
@@ -485,7 +485,7 @@ header {
 
 .cards p {
   padding-top: 20px;
-  font-family: "PT Sans", "Metropolis", sans-serif;
+  font-family: "PT Sans", sans-serif;
   text-align: left;
   font-size: 15px;
   padding-left: 2%;
@@ -1244,7 +1244,7 @@ box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
 
 }
 
-@media (min-width: 601px) and (max-width: 767){
+@media (min-width: 601px) and (max-width: 766){
   .getInvolved {
     padding-top: 0.1rem;
     padding-bottom: 1rem;
@@ -1369,7 +1369,7 @@ box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
 }
 
 
-@media (min-width: 768px) and (max-width: 992){
+@media (min-width: 767px) and (max-width: 992){
   .getInvolved {
     padding-top: 0.1rem;
     padding-bottom: 1rem;
@@ -1497,6 +1497,7 @@ box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
 }
 }
 
+/*Justin media query for the home page to make responsive (iPads etc)*/
 @media only screen and (max-width: 950px) {
   .heroContent {
     flex-direction: row; /* Stack elements vertically */
@@ -1659,8 +1660,8 @@ box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
       margin: 10px 0; /* Add some spacing between links */
   }
 
-  .headerLinks li a {
-    color: black;
+  .headerLinks.active li a {
+    color: white;
   }
 
   .footerContainer {
@@ -1792,7 +1793,7 @@ box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
 }
 
 }
-
+/*Justin media query for the home page to make responsive (Phones etc)*/
 @media only screen and (max-width: 650px) {
   .signupContent {
     margin: 0 auto;
@@ -2012,6 +2013,7 @@ box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
     padding: 5px 5px 5px 5px;
   }
 }
+/*Justin media query for the home page to make responsive (ipad Pro and others etc)*/
 @media only screen and (max-width: 1350px) {
   .heroContent {
     flex-direction: row; /* Stack elements vertically */
@@ -2071,7 +2073,7 @@ box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
   }
 
   .footerLogo {
-    width: 70px;
+    width: 255px;
     height: auto; 
   }
 
